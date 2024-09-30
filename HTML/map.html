@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 2, 3, 4, 5];
+      let new_array = numbers.forEach((element, i) => {
+        return element * 2;
+      });
+
+      let new_y = numbers.map((elem, i) => {
+        return elem * 2;
+      });
+      let filtered = numbers.filter((elem, i) => {
+        return elem % 2!== 0;
+      });
+      console.log(new_array);
+      console.log(new_y)
+      console.log(filtered);
+    </script>
+  </body>
+</html>
+
+
+<!-- <html></html>
+    <body>
+        <script>
+            let number=[1,2,3,4,5];
+            number.forEach((ele,i)=> 
+        {
+            console.log(ele)
+        });
+        let new_y=number.map((ele,i) => {
+                return ele*2
+             });
+             let new_z=number.filter((ele,i) => {
+                return ele%2==0
+             });
+             let new_w=number.map((ele,i) => {
+                return ele*3
+             });
+             let new_x=number.filter((ele,i) => {
+                return ele%2!=0
+             });
+             console.log(new_w)
+             console.log(new_x)
+             console.log(new_z)
+             console.log(new_y);
+        </script>
+    </body>
+</html> -->

@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array1=[1,2,3,4];
+        let array2=[6,7,8];
+        let array2a=[array1,6,7,8];
+        let array2b=[...array1,6,7,8];
+        console.log(array2);
+        console.log(array2a);
+        console.log(array2b);
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      // spread operator
+      // number=[1,2,3,4];
+      // function sum(a,b,c,d) {
+      //     console.log(a+b+c+d);
+      // }
+      // sum(...number)
+
+      // <!-- object propert -->
+      const person = {
+        name: "aasif",
+        age: 20,
+        // gender:"male"
+      };
+      //  <!-- for access the -->
+      // console.log(person.name);
+      // console.log(person.age);
+
+      // <!--  -->
+      const { name, age, gender } = person;
+      console.log(name);
+      console.log(age);
+      console.log(gender);
+
+      //
+      const number = [1, 2, 3, 4];
+      //const a,const b,const c,const d
+      const [a, b, c, d] = number; //in array search for index and in object search for key values
+      console.log(a);
+      console.log(b);
+      console.log(c);
+      console.log(d);
+
+
+    </script> -->
+    <script>
+              // let arr1=[1,2,3,4]
+        // let arr2=[...arr1,6,7,8]
+        // console.log(arr2);
+
+
+        // const data={
+        //     regno:144,
+        //     branch:"it"
+        // }
+        // const student={
+        //     name:"asif",
+        //     age:24,
+        //     marks:200,
+        //     ...data
+        // }
+        // console.log(student)
+
+
+
+// const student={
+//             name:"asif",
+//             age:24,
+//             marks:200
+//         }
+
+        // const{name,age,marks}=student
+        // console.log(name)
+        // console.log(age)
+        
+      // const{name,age,gender}=student
+      //   console.log(name)
+      //   console.log(age) 
+      //   console.log(gender) 
+      
+      // const colors=["red","blue","black"]
+        
+      const student={
+            name:"asif",
+            age:24,
+            marks:200,
+            gender:"male"
+        } 
+          const{name,age,...other}=student
+          console.log(name)
+          console.log(age) 
+          console.log(other)
+          
+        
+        
+    </script>
+
+  </body>
+</html>

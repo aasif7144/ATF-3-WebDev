@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS + JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div>
+        <img src="/images/html.svg" class="logo" />
+        <img src="/images/css.svg" class="logo" />
+        <img src="/images/javascript.svg" class="logo" />
+      </div>
+      <h1>HTML + CSS + JavaScript</h1>
+      <p class="read-instructions" style="display: none">
+        Change HTML/ CSS/ JS code and hit refresh the URL to see the changes.
+      </p>
+    </div>
+    <script>
+      //     setTimeout(()=>{
+      //     console.log("delayed");
+      // },5000)
+
+      // setTimeout(()=>{
+      //     console.log("cancelled time out");
+      //     clearTimeout(time)
+      // },2000)/
+
+      // console.log("a");
+      // setTimeout(()=>{
+      //         console.log("b");
+      // },0)
+      // console.log("c");
+
+      function Classed(callback) {
+        setTimeout(() => {
+          console.log("class comleted");
+          // tests();
+          callback();
+        }, 10000);
+      }
+
+      function tests(callback) {
+        setTimeout(() => {
+          console.log("test Comleted");
+          callback()
+        }, 5000);
+      }
+
+      function evaluation(callback) {
+        setTimeout(() => {
+          console.log("evaluation completed");
+          callback()
+        }, 3000);
+      }
+
+      function result() {
+        console.log("Result completed");
+      }
+
+      Classed(() => {
+        tests(() => {
+          evaluation(() => {
+            result();
+          });
+        });
+      });
+    </script>
+    <script src="scipt.js"></script>
+  </body>
+</html>

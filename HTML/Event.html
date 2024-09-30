@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS + JS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .addclass {
+        background-color: brown;
+      }
+      /* .removeclass {
+        background-color: blue;
+      } */
+      .dark{
+        background-color: darkslateblue;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello</p>
+    <div id="root" clas="active"  >
+        <center><button onclick="btn2">ChangeMode</button></center>
+      <div>
+        <img src="/images/html.svg" class="logo"/>
+        <img src="/images/css.svg" class="logo"/>
+        <img src="/images/javascript.svg" class="logo"/>
+        <p>Asif</p>
+      </div>
+      <h1 id="heading">HTML + CSS + JavaScript</h1>
+      <button id="button1" onclick="clicke()">submit</button>
+      <p id="heading" class="read-instructions" style="display: none">
+        Change HTML/ CSS/ JS code and hit refresh the URL to see the changes.
+      </p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+      let imaged = document.createElement("img");
+      imaged.setAttribute(
+        "src",
+        "https://static.vecteezy.com/system/resources/thumbnails/028/560/488/small_2x/cybersecurity-hacker-with-a-concealed-face-wearing-a-hoodie-in-a-technology-themed-wallpaper-photo.jpg"
+      );
+
+      let reference = document.getElementById("button1");
+      let parent = document.getElementById("root");
+      parent.insertBefore(imaged, reference);
+
+      //
+      let div = document.getElementById("root");
+        div.classList.add("addclass");
+    //   div.classList.remove("removeclass");
+    div.classList.toggle("active")
+
+    function changeMode(){
+ div.classList.toggle("dark")
+    }
+
+    let button=document.getElementById("btn2")
+     button.onclick=function(){
+      div.classList.toggle("dark")
+     } 
+    
+    </script>
+  </body>
+</html>
